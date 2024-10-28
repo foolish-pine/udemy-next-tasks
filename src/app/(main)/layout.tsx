@@ -6,11 +6,9 @@ const MainLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div className="flex h-screen bg-indigo-300">
-      <div>
-        <SideMenu />
-      </div>
-      <main className="flex-1 overflow-auto bg-red-300">{children}</main>
+    <div className="flex h-screen">
+      <SideMenu />
+      <main className="bg-slate-50 flex-1 overflow-auto">{children}</main>
     </div>
   );
 };
